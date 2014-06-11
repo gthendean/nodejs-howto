@@ -20,5 +20,5 @@ What you can build with Node.js
 ## References ##
 
 - Tutorial NodeJS
-   - [Events] https://www.youtube.com/watch?v=5foad8PygGM
-   - [Streams] https://www.youtube.com/watch?v=9Ui3DaNO7lE
+   - [Events](https://www.youtube.com/watch?v=5foad8PygGM)
+   - [Streams](https://www.youtube.com/watch?v=9Ui3DaNO7lE)
