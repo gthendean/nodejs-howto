@@ -1,7 +1,7 @@
 nodejs-howto
 ============
 
-Contains examples of how-to do things in Node.js
+Contains examples of how-to do things with Node.js
 
 ## How-to Run examples ##
 
