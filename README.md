@@ -3,7 +3,7 @@ nodejs-howto
 
 Contains examples of how-to do things in Node.js
 
-## How-to Run ##
+## How-to Run examples ##
 
 Each files can be "Run" independently, except indicated below.
 
@@ -19,6 +19,7 @@ What you can build with Node.js
 
 ## References ##
 
+- [Node.js API documentation] (http://nodejs.org/api/)
 - Tutorial NodeJS
    - [Events](https://www.youtube.com/watch?v=5foad8PygGM)
    - [Streams](https://www.youtube.com/watch?v=9Ui3DaNO7lE)
