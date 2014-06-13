@@ -1,0 +1,8 @@
+{
+  "name": "nodejs-howto",
+  "description": "Contains examples of how-to do things with Node.js",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+  }
+}
