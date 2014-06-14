@@ -13,7 +13,8 @@ Each files can be "Run" independently, except indicated below:
 
 ## Unresolved Issues ##
 
-- Express/index.js - request to external resource did not work with the following error
+- Express/index.js - request to external resource did not work with the following error.
+    Related to the proxy setting. Works fine if proxy not needed.
 
     <pre>
     stream.js:94
@@ -35,6 +36,7 @@ What you can build with Node.js
 ## Useful Modules ##
 
 - [prettyjson](https://www.npmjs.org/package/prettyjson)
+    Usage: curl http://url/result.json | prettyjson
 
 ## References ##
 
@@ -47,4 +49,4 @@ What you can build with Node.js
    - [Express](https://www.youtube.com/watch?v=WkJyEBz0PTY)
    - [Socket.io](https://www.youtube.com/watch?v=mtDK4jf4RS0)
 
-- TBD
+- [EJS Template](http://robdodson.me/blog/2012/05/31/how-to-use-ejs-in-express/)

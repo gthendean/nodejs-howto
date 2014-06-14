@@ -2,9 +2,12 @@
  * Created on 6/13/2014.
  *
  * Basic how-to use the Express module
- *
  * URL : http://expressjs.com/
  *
+ * Need to 'npm install': request, ejs
+ *
+ * Also see the following for EJS template info
+ *      http://robdodson.me/blog/2012/05/31/how-to-use-ejs-in-express/
  */
 
 // Make sure "express" is installed; "npm install express"
@@ -23,43 +26,46 @@ app.get('/', function(req, res) {
 });
 
 // ROUTE: openLibrary Search API
+//      curl http://localhost:8888/searchBook/remote
 app.get('/searchBook/:title', function(req, res) {
 
     // extract title
     var bookTitle = req.params.title;
     console.log('Book title: ' + bookTitle);
 
-    /**
+    //    'proxy': 'http://proxy.oak.sap.corp:8080'
     var options = {
         protocol: 'http',
         host: 'www.openlibrary.org',
         pathname: '/search.json',
-        query: {'title': bookTitle},
-        proxy: 'http://proxy.oak.sap.corp:8080'
-    };
-     */
-    var options = {
-        protocol: 'http',
-        host: 'cricscore-api.appspot.com',
-        pathname: '/csa',
-        proxy: 'proxy.oak.sap.corp:8080'
+        query: {'title': bookTitle}
     };
 
-    var openLibraryUrl = url.format(options);
+    var svcUrl = url.format(options);
 
     // pipe request to response
-    // Can be done with a more complicate http.request() method; require('http') module
-    request(openLibraryUrl).pipe(res);
-    /**
-    request('http://www.google.com', function (error, response, body) {
-        if (!error && response.statusCode == 200) {
-            console.log(body) // Print the google web page.
-        } else {
-            console.log(error);
-        }
-        res.end();
+    // Can be done with a more complicated http.request() method; require('http') module
+    request(svcUrl).pipe(res);
+});
+
+// ROUTE: Country list
+//      curl http://localhost:8888/countries
+app.get('/countries', function(req, res) {
+
+     var options = {
+        protocol: 'http',
+        host: 'restcountries.eu',
+        pathname: '/rest/v1'
+    };
+
+    var svcUrl = url.format(options);
+    //request(svcUrl).pipe(res);
+    request(svcUrl, function (error, response, body) {
+        var countries = JSON.parse(body);
+        console.log('Countries: ' + JSON.stringify(countries));
+        //
+        res.render('countries.ejs', {'countries': countries});
     });
-     */
 });
 
 var server = app.listen(8888, function() {
