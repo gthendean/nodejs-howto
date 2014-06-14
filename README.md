@@ -5,11 +5,11 @@ Contains examples of how-to do things with Node.js
 
 ## How-to Run examples ##
 
-Each files can be "Run" independently, except indicated below.
+Each files can be "Run" independently, except indicated below:
 
-Express - 'run index.js'
+- Express - 'run index.js'
 
-SimpleHttpServer - `run index.js`
+- SimpleHttpServer - `run index.js`
 
 ## Unresolved Issues ##
 
