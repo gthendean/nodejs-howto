@@ -9,6 +9,7 @@
  *
  * REF:
  *      https://www.youtube.com/watch?v=9Ui3DaNO7lE
+ *      http://ejohn.org/blog/node-js-stream-playground/
  */
 
 var http = require('http');
