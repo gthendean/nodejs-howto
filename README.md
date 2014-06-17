@@ -13,17 +13,7 @@ Each files can be "Run" independently, except indicated below:
 
 ## Unresolved Issues ##
 
-- Express/index.js - request to external resource did not work with the following error.
-    Related to the proxy setting. Works fine if proxy not needed.
-
-    <pre>
-    stream.js:94
-          throw er; // Unhandled stream error in pipe.
-                ^
-    Error: getaddrinfo ENOTFOUND
-        at errnoException (dns.js:37:11)
-        at Object.onanswer [as oncomplete] (dns.js:124:16)
-    </pre>
+- None
 
 ## Node.js ##
 

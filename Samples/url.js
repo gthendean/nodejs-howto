@@ -1,6 +1,10 @@
 'use strict';
 /**
  * Created on 6/16/2014.
+ *
+ * Example and experiement with Node.js URL
+ *
+ * TODO need to cleanup
  */
 var url = require('url');
 
