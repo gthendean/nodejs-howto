@@ -50,3 +50,9 @@ What you can build with Node.js
    - [Socket.io](https://www.youtube.com/watch?v=mtDK4jf4RS0)
 
 - [EJS Template](http://robdodson.me/blog/2012/05/31/how-to-use-ejs-in-express/)
+
+- Node.js & Socket.io Chat server
+   - [Basic](https://www.youtube.com/watch?v=pNKNYLv2BpQ)
+   - [Adding User](https://www.youtube.com/watch?v=dOSIqJWQkXM)
+   - [Private Messaging](https://www.youtube.com/watch?v=k8o8-Q_-Qfk)
+   - [Saving to MongoDB](https://www.youtube.com/watch?v=c01OHDUpDMU)
