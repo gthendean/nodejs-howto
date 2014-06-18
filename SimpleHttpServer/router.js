@@ -3,7 +3,7 @@
  */
 
 // Blocking route
-function block_route (pathname, routes) {
+function block_route(pathname, routes) {
     console.log("Blocking - Routing to '" + pathname + "'...");
 
     if (typeof routes[pathname] === 'function') {
@@ -15,7 +15,7 @@ function block_route (pathname, routes) {
 }
 
 // Non-Blocking route
-function route (pathname, routes, response, postData) {
+function route(pathname, routes, response, postData) {
     console.log("Routing to '" + pathname + "'...");
 
     if (typeof routes[pathname] === 'function') {

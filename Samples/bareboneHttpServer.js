@@ -3,7 +3,7 @@
  */
 var http = require('http');
 
-http.createServer(function(req, res) {
+http.createServer(function (req, res) {
     // Status code in header
     res.writeHead(200, {
         'Content-Type': 'text/plain; charset=UTF-8'

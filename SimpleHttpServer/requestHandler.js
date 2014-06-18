@@ -6,7 +6,7 @@ var exec = require("child_process").exec,
     querystring = require("querystring"),
     fs = require("fs");
 
-function home (response) {
+function home(response) {
     console.log("Request handler 'home' was called.");
 
     // This is a hack solution to show both Blocking and Non-Blocking server
@@ -76,7 +76,7 @@ function directory(response) {
     });
 }
 
-function upload (response) {
+function upload(response) {
     console.log("Request handler 'upload' was called.");
     var content = '<html>'+
         '<head>'+

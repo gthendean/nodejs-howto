@@ -11,7 +11,7 @@
 var http = require('http');
 var querystring = require('querystring');
 
-var makeRequest = function(message) {
+var makeRequest = function (message) {
     var options = {
       host: 'localhost',
       port: 8888,

@@ -4,7 +4,7 @@
  */
 
 // Function to be passed around
-function say (word) {
+function say(word) {
     console.log('You said: ' + word);
 }
 
