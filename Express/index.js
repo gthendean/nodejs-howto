@@ -28,7 +28,7 @@ var express = require('express')
 var app = express();
 
 
-var proxy = process.argv[2].toLowerCase();
+var proxy = process.argv[2];
 if (proxy) {
     console.log('argv[2] = ' + proxy);
 }
@@ -45,7 +45,7 @@ function urlParseAddProxy(urlStr) {
     };
      */
     if (proxy) {
-        options.proxy = proxy;
+        options.proxy = proxy.toLowerCase();
     }
     return options;
 }

@@ -7,9 +7,9 @@ Contains examples of how-to do things with Node.js
 
 Each files can be "Run" independently, except indicated below:
 
-- Express - 'run index.js'
+- Express - 'node index.js'
 
-- SimpleHttpServer - `run index.js`
+- SimpleHttpServer - `node index.js`
 
 ## Unresolved Issues ##
 
